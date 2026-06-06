@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MaxisShop.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3fc0630136cdb8e823a845c816c9dacf12a29e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MaxisShop.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MaxisShop.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

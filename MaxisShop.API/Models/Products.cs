@@ -1,7 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MaxisShop.API.Models;
+namespace MaxisShop.API.Models 
+{
 public class Products
 {
     [Required]
@@ -16,4 +17,5 @@ public class Products
     public bool? InStocks { get; set; }
 
     public string? Note { get; set; }
+}
 }
