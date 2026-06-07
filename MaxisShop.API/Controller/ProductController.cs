@@ -1,6 +1,7 @@
 using MaxisShop.API.Data;
 using MaxisShop.API.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace MaxisShop.API.Controllers
 {   
@@ -22,6 +23,23 @@ namespace MaxisShop.API.Controllers
             await _context.SaveChangesAsync();
             return Ok(products);
 
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<Products>> Get(int id)
+        {
+            var products = await _context.Products.FindAsync(id);
+            if (products == null)
+            {
+                return NotFound();
+            }
+            return Ok(products);
+        }
+        [HttpGet]
+        public async Task<ActionResult<List<Products>>> GetAll()
+        {
+            var products = await _context.Products.ToListAsync();
+            return Ok(products);
         }
     }
 }

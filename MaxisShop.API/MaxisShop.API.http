@@ -12,4 +12,9 @@ Accept: application/json
     "Note" : "fresh and fresh"
 }
 
+GET {{Hostname}}/Products
+Accept: application/json
+
+
+
 ###
