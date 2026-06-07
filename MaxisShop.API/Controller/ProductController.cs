@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MaxisShop.API.Controllers
 {   
 
-    [Route("api/[controller]")]
+    [Route("api/Products")]
     [ApiController]
     public class ProductController : ControllerBase
     {
@@ -16,11 +16,11 @@ namespace MaxisShop.API.Controllers
             _context = context;
         }
         [HttpPost]
-        public async Task<ActionResult<Products>> create ([FromBody] Products products)
+        public async Task<ActionResult<Products>> Create([FromBody] Products products)
         {
             await _context.Products.AddAsync(products);
             await _context.SaveChangesAsync();
-            return Ok();
+            return Ok(products);
 
         }
     }

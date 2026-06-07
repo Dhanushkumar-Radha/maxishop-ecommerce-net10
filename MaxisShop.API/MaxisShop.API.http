@@ -1,6 +1,15 @@
-@MaxisShop.API_HostAddress = http://localhost:5271
+@Hostname = http://localhost:5271/api
 
-GET {{MaxisShop.API_HostAddress}}/weatherforecast/
+POST {{Hostname}}/Products
+Content-Type: application/json
 Accept: application/json
+
+{
+    "Name" : "chicken",
+    "Price" : 888.45,
+    "ManufactureDate" : "2026-06-07",
+    "InStocks" : true,
+    "Note" : "fresh and fresh"
+}
 
 ###
