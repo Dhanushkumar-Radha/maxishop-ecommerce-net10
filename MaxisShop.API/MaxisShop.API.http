@@ -15,6 +15,9 @@ Accept: application/json
 GET {{Hostname}}/Products
 Accept: application/json
 
+GET {{Hostname}}/Products/1
+Accept: application/json
+
 
 
 ###
